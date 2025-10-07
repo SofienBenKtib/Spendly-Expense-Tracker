@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Your_password123"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  mvcapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dotnet9-mvc-app
+    depends_on:
+      - sqlserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=FinanceDb;User=sa;Password=Your_password123;TrustServerCertificate=True;"
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./logs:/app/logs
+
+volumes:
+  sqlserver_data:
+    driver: local

@@ -1,0 +1,15 @@
+﻿body {
+}
+button{
+    padding:10px;
+    border-radius:4px;
+    background-color:tomato;
+    color:white;
+    border:none;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+button:hover{
+    text-decoration:underline;
+}
