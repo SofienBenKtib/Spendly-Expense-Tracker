@@ -1,6 +1,19 @@
 html {
   font-size: 14px;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* removes scrollbars */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 
 @media (min-width: 768px) {
   html {
@@ -12,15 +25,6 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
@@ -28,4 +32,24 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+footer {
+    height:64px;
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:100%;
+    color:white;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+a{
+    text-decoration-style:dashed;
+    text-decoration-color:white;
+    text-underline-offset:5px;
+    text-anchor:middle;
+    display:inline-block;
 }
