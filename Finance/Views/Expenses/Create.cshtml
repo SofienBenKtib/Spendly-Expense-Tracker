@@ -1,5 +1,8 @@
 ﻿@model Finance.Models.Expense
-
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_Layout";
+}
 <div class="container">
     <h2>Add Expense</h2>
     <form asp-action="Create" method="post">

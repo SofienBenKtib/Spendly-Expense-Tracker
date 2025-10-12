@@ -4717,11 +4717,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sofie\\source\\repos\\Finance\\Finance\\Finance.csproj",
+      "projectUniqueName": "C:\\Users\\sofie\\Desktop\\Finance\\Finance\\Finance.csproj",
       "projectName": "Finance",
-      "projectPath": "C:\\Users\\sofie\\source\\repos\\Finance\\Finance\\Finance.csproj",
+      "projectPath": "C:\\Users\\sofie\\Desktop\\Finance\\Finance\\Finance.csproj",
       "packagesPath": "C:\\Users\\sofie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sofie\\source\\repos\\Finance\\Finance\\obj\\",
+      "outputPath": "C:\\Users\\sofie\\Desktop\\Finance\\Finance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
